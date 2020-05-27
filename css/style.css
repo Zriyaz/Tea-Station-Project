@@ -142,3 +142,53 @@ Header
   font-size: 1rem;
   padding: 1rem 1.75rem;
 }
+
+.content-divider{
+  height: 0.5rem;
+  background: linear-gradient(to left,
+  var(--clr-primary),
+  #e9b949,
+  var(--clr-primary)
+  );
+}
+
+/*
+================
+Skills
+================ 
+*/
+.skills{
+ background: bar(--clr-grey-10);
+}
+.skills{
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);  
+}
+.skill-icon{
+  font-size: 2.4rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--clr-primary);
+}
+
+.skill-text{
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+.skills:hover{
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+.skills:hover .skill-icon{
+  transform: translateY(-5px);
+}
+@media screen and (min-width:576px){
+  .skills{
+    float:left;
+    width:50%;
+  }
+
+}
